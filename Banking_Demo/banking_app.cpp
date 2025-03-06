@@ -16,7 +16,7 @@ public:
     void deposit(int amount) {
         if (amount > 0) {
             balance += amount;
-            cout << "Updated Balance: $" << balance << endl;
+            cout << "Updated Balance: " << balance << endl;
         } else {
             cout << "Invalid amount!" << endl;
         }
@@ -26,7 +26,7 @@ public:
     void withdraw(int amount) {
         if (amount > 0 && balance >= amount) {
             balance -= amount;
-            cout << "Updated Balance: $" << balance << endl;
+            cout << "Updated Balance: " << balance << endl;
         } else {
             cout << "Insufficient balance!" << endl;
         }
@@ -34,7 +34,7 @@ public:
 
 
     void getBalance() {
-        cout << "Current Balance: $" << balance << endl;
+        cout << "Current Balance: " << balance << endl;
     }
 };
 
